@@ -56,7 +56,7 @@
       var w = bag.woorden[0];
       var u = stepUrls(href, w.hz);
       return {
-        title: "Recall 3.5: " + w.hz + " (" + (w.pinyin || "") + ") · " + bag.label,
+        title: "Herhaal: " + w.hz + " (" + (w.pinyin || "") + ") · " + bag.label,
         at: bag.at,
         label: bag.label,
         yes: u.yes,
@@ -66,7 +66,7 @@
         hook: w.klankhook || "",
         doe: (w.recallDoe || []).slice(0, 3).join(" · "),
         desc:
-          "VORM 3.5. Geen quiz.\n" +
+          "Geen quiz.\n" +
           "HOOK " + (w.klankhook || "") + "\n" +
           "DOE " + (w.recallDoe || []).slice(0, 3).join(" / ") + "\n" +
           "kaart " + u.kaart + "\nklank " + u.klank + "\nschrift " + u.schrift +
@@ -78,13 +78,13 @@
     var first = bag.woorden[0] || { hz: "" };
     var u0 = stepUrls(href, first.hz);
     return {
-      title: "Recall 3.5 batch " + bag.woorden.length + " · " + bag.label,
+      title: "Herhaal reeks " + bag.woorden.length + " · " + bag.label,
       at: bag.at,
       label: bag.label,
       yes: href.split("?")[0] + "?batch=" + encodeURIComponent(ids) + "&ok=1",
       no: href.split("?")[0] + "?batch=" + encodeURIComponent(ids) + "&ok=0",
       open: u0.open,
-      desc: "VORM 3.5 batch: " + ids + "\nEerste: " + u0.recall
+      desc: "Reeks: " + ids + "\nEerste: " + u0.recall
     };
   }
   g.Chronos = { STATIONS: STATIONS, cycle: cycle, batch: batch, eventFor: eventFor, stepUrls: stepUrls, dayKey: dayKey };

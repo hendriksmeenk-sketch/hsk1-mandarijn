@@ -1,138 +1,81 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WOORD DIEPTE 4.6 · Chinese leren 4.6</title>
-<style>:root{--bg:#f5efe4;--pap:#fbf7ef;--ink:#2b2119;--dim:#6b5a48;--rood:#b3261e;--lijn:#d9ccb6;--acc:#8a4b2a;--goed:#2e6b3a}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,"Noto Serif",serif}
-main{max-width:640px;margin:0 auto;padding:16px}
-h1{font-size:30px;margin:8px 0 2px}h1 .hz{font-size:56px;letter-spacing:4px}
-.sub{color:var(--dim);font-size:16px}
-section.box{background:var(--pap);border:1px solid var(--lijn);border-radius:14px;padding:16px;margin:16px 0}
-h2{font-size:22px;margin:0 0 8px}h3{font-size:18px;margin:18px 0 6px;color:var(--acc)}
-.rood{color:var(--rood)}.prose{white-space:pre-wrap}
-button{font:inherit;min-height:44px;min-width:44px;padding:8px 14px;border-radius:10px;border:1px solid var(--acc);background:#fff;color:var(--ink);cursor:pointer}
-button.on{background:var(--acc);color:#fff}
-.row{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
-#hw{width:min(86vw,320px);height:min(86vw,320px);margin:8px auto;background:#fff;border:1px solid var(--lijn);border-radius:8px;touch-action:none;
-background-image:linear-gradient(var(--lijn),var(--lijn)),linear-gradient(90deg,var(--lijn),var(--lijn)),linear-gradient(45deg,transparent 49.7%,#eadfcb 50%,transparent 50.3%),linear-gradient(-45deg,transparent 49.7%,#eadfcb 50%,transparent 50.3%);
-background-size:100% 1px,1px 100%,100% 100%,100% 100%;background-position:center;background-repeat:no-repeat}
-#fb{min-height:28px;text-align:center;font-weight:bold}
-ol.streek{padding-left:0;list-style:none;margin:0}ol.streek li{padding:8px 10px;border-radius:8px;margin:4px 0;border:1px solid transparent}
-ol.streek li.nu{border-color:var(--acc);background:#fff}ol.streek li.af{color:var(--goed)}
-.cn{font-size:20px}.st{width:40px;height:40px;vertical-align:middle;background:#fff;border:1px solid var(--lijn);border-radius:6px;margin-right:8px}.hook{display:flex;gap:8px;margin:8px 0}.hook img{width:100%;border-radius:10px;border:1px solid var(--lijn)}.hook a{flex:1}
-.tegels{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}.tg{margin:0;width:44px;text-align:center;font-size:13px;color:var(--dim)}.tg svg{width:44px;height:44px;background:#fff;border:1px solid var(--lijn);border-radius:6px}
-.opt.goed{background:var(--goed);color:#fff;border-color:var(--goed)}.opt.fout{background:var(--rood);color:#fff;border-color:var(--rood)}
-.fam li{margin:4px 0}.twijfel{color:var(--dim);font-size:16px}
-label.hand{display:flex;gap:10px;align-items:center;min-height:44px}label.hand input{width:24px;height:24px}
-#status{font-weight:bold}details summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--acc);font-size:18px}
-details.q summary{color:var(--ink);font-size:17px}
-footer{color:var(--dim);font-size:16px;text-align:center;margin:24px 0}
-.f{padding:6px 0;border-bottom:1px solid var(--lijn)}.tag{font-size:1rem;background:#efe3cf;border-radius:6px;padding:2px 6px}
-.audio{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}details{border-top:1px solid var(--lijn);margin-top:6px}
-h1 .sub{font-size:16px;font-weight:normal}
-ol.paleis{padding-left:24px;margin:4px 0}ol.paleis li.anker{color:var(--rood)}
-.mm{width:100%;border-radius:10px;border:1px solid var(--lijn)}
-.snm{font-size:14px;color:var(--dim)}abbr{text-decoration:underline dotted;cursor:help}
-table.rc{width:100%;border-collapse:collapse;font-size:15px}table.rc td,table.rc th{border-bottom:1px solid var(--lijn);padding:6px 4px;text-align:left}.hzc{font-size:22px}
-nav.top{font-size:15px;margin-bottom:4px}nav.top a{color:var(--acc)}
-header{display:flex;align-items:center;gap:10px;padding:8px 14px;border-bottom:1px solid var(--lijn);background:var(--bg);position:sticky;top:0;z-index:5}header a{text-decoration:none}header b{color:var(--acc);letter-spacing:.06em;font-size:13px}
-.zoek{flex:1;border:1px solid var(--lijn);border-radius:10px;padding:8px 12px;font:inherit;background:#fff;min-height:40px}
-.lijn{color:var(--dim);font-size:15px;margin:0 0 8px}.pad{display:flex;gap:4px;margin:0 0 8px}.pad a{flex:1;text-align:center;border:1px solid var(--lijn);border-radius:8px;padding:6px 2px;font-size:12px;color:var(--ink);text-decoration:none;background:var(--pap)}.pad span{display:block;color:var(--rood);font-weight:bold}
-#blad45 h1{margin:4px 0}#blad45 h1 .hz{font-size:56px;color:var(--rood);letter-spacing:4px}#blad45 h1 .ondertitel{display:block;color:var(--goed);font-size:16px;font-weight:normal}
-#blad45>h2{font-size:21px;margin:22px 0 6px;border-bottom:2px solid var(--lijn);padding-bottom:2px}
-.c-plek{color:#1E6FD9}.c-beeld{color:#8E44AD}.c-woord{color:var(--rood)}.c-toon{color:var(--goed)}
-.hook{font-style:italic;border-left:6px solid #8E44AD;padding-left:8px}.f .hook{border:0;padding:0}
-.plaat-huis{position:relative}.plaat{width:100%;border-radius:10px;border:1px solid var(--lijn);display:block}
-.hot{position:absolute;transform:translate(-50%,-50%);width:16%;height:22%;min-width:44px;min-height:44px;border:0;border-radius:50%;background:transparent;padding:0}.hot:focus,.hot:hover{outline:2px solid #1E6FD9;background:rgba(30,111,217,.12)}.hot.midden{width:22%;height:30%}
-.legenda{font-size:14px;margin:6px 0}
-.tools{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tools button{font-size:15px;padding:6px 10px}
-.tool-uit{background:var(--pap);border-left:6px solid #1E6FD9;padding:8px 10px;margin:8px 0;border-radius:6px}
-.liniaal{position:relative;height:36px;margin:8px 0;background:var(--pap);border-left:6px solid var(--goed)}.liniaal span{position:absolute;left:0;top:0;width:42%;height:8px;background:var(--goed)}
-.liniaal.val1 span{animation:valbalk .4s ease forwards}@keyframes valbalk{from{top:0}to{top:24px}}
-.deur{border-left:8px solid;border-radius:10px;padding:8px 10px;margin:6px 0;cursor:pointer;min-height:44px}.deur p{margin:0}.deur .r1{font-weight:bold}.deur .r2{font-style:italic;margin:2px 0}
-.deur .haak{color:var(--goed);font-weight:bold}.deur .hzd{color:var(--rood);font-size:26px;font-weight:bold;margin-right:6px}.deur .py{color:var(--goed);font-weight:bold;margin-right:6px}
-.adem{text-align:center;font-size:26px;margin:4px 0}
-.kaart{background:#efe7d8;border-left:6px solid #1E6FD9;border-radius:8px;padding:8px 10px;margin:6px 0}.grijs{color:var(--dim);font-size:15px}
-.ladder p{margin:0 0 3px;font-size:15px}
-table.kern{width:100%;border-collapse:collapse}table.kern td{border-bottom:1px solid var(--lijn);padding:5px 4px;vertical-align:top}table.kern td:first-child{width:90px;font-weight:bold}
-.valrij{display:flex;flex-wrap:wrap;align-items:flex-start;gap:4px 14px}button.val{background:none;border:0;color:var(--goed);font-size:28px;font-weight:bold;padding:0 4px}
-button.val.t4.zakt{animation:zak .35s ease}button.val.t3.zakt{animation:dal .5s ease}button.val.t2.zakt{animation:stijg .35s ease}
-@keyframes zak{from{transform:translateY(-14px)}to{transform:translateY(8px)}}@keyframes dal{0%{transform:translateY(0)}50%{transform:translateY(12px)}100%{transform:translateY(-6px)}}@keyframes stijg{from{transform:translateY(8px)}to{transform:translateY(-10px)}}
-#blik-tian{color:var(--rood);font-size:72px;margin:0;line-height:1}
-.voordeur{color:#1E6FD9;font-weight:bold;margin:0}
-.hook2{display:flex;gap:8px;margin:8px 0}.hook2 a{flex:1}.hook2 img{width:100%;border-radius:10px;border:1px solid var(--lijn)}
-.dek{color:transparent!important;background:var(--lijn);border-radius:4px}
-.groei-rij{display:flex;flex-wrap:wrap;gap:6px}.groei-nu{min-height:50px}.groei-nu svg{width:80px;height:80px;background:#fff;border:1px solid var(--lijn);border-radius:6px}
-#streek-vlak{width:100%;height:200px;touch-action:none;background:#fbf7ef;border:1px solid var(--lijn);border-left:6px solid var(--ink);border-radius:8px}#streek-model .st{width:56px;height:56px}
-ul.leden{padding-left:18px}ul.leden .teken,ul.leden .rood{font-size:22px;margin-right:6px}
-#kamer{position:fixed;inset:0;z-index:30;overflow:auto;background:var(--bg);padding:16px 16px 48px}#kamer[hidden]{display:none}#kamer.blauw{background:#e7f1fb}
-#kamer .kamer-beeld{height:40vh;border-radius:12px;margin:8px 0;background:#fff 50% 50%/contain no-repeat}#kamer .label-beeld{color:#8E44AD;font-style:italic;font-weight:bold;margin:0}#kamer-hz .hzd{font-size:60px;color:var(--rood)}
-details.blok>summary{font-size:18px}
-.kw{border:1px solid var(--lijn);border-radius:8px;padding:5px 8px;font-size:15px;background:#fff;color:var(--ink);min-height:44px}.kw.on{border-color:var(--acc);color:var(--acc)}.kw i{display:block;font-style:normal;color:var(--dim);font-size:11px;text-transform:uppercase}
-#peek .hz{font-size:44px}.still,.cue-still{width:100%;max-height:180px;object-fit:cover;border-radius:8px;margin-top:8px}.cue-still{display:none}body.dicht .cue-still{display:block}body.dicht #blad45,body.dicht #peek{display:none}
-.cue-txt{font-size:19px;font-weight:bold;margin:8px 0;min-height:26px}.dim{color:var(--dim);font-size:15px}
-body.eenblik #blad45 *:not(h1):not(h1 *){visibility:hidden}body.eenblik #blad45 h1{position:fixed;top:30%;left:0;right:0;text-align:center;visibility:visible;z-index:40}
-#kamer-toon{margin-left:.5em}#kamer-toon::after{content:" · "}
-.kw.on,button.kw.on{color:#fff}.kw.on i{color:#F3E6D8}
-/* 4.6c beginners-UI */
-#start{text-align:center;padding:18px 0 8px}
-#start h1{margin:0}#start .hz{font-size:96px;line-height:1.1;display:block}
-.groot-audio{font-size:22px;padding:14px 28px;min-height:56px;border-radius:999px;background:#8a4b2a;color:#fff;border:0;margin:6px 0}
-.betekenis{font-size:20px;margin:8px 0 14px}
-.begin{font-size:20px;min-height:56px;width:100%;max-width:340px;border-radius:14px;background:#2e6b3a;color:#fff;border:0;font-weight:700}
-.lijn{text-align:center;color:#7a6a58;font-size:14px}
-body.rustig .pad,body.rustig .stapblok:not([open]) {display:none}
-body.rustig footer{display:none}
-.pad{display:flex;gap:4px;justify-content:space-between;margin:6px 0 10px;position:sticky;top:52px;background:#f6efe3;z-index:5;padding:4px 0}
-.pad a{flex:1;text-align:center;font-size:11px;color:#7a6a58;text-decoration:none;min-height:44px;display:flex;flex-direction:column;align-items:center;gap:2px}
-.pad a span{width:26px;height:26px;border-radius:50%;border:2px solid #d8c8ad;display:flex;align-items:center;justify-content:center;font-weight:700;background:#fff}
-.pad a.af span{background:#2e6b3a;border-color:#2e6b3a;color:#fff}.pad a.nu span{background:#8a4b2a;border-color:#8a4b2a;color:#fff}
-.stapblok{background:#fbf7ef;border:1px solid #e3d6bf;border-radius:14px;margin:10px 0;padding:0 14px}
-.stapblok>summary{list-style:none;cursor:pointer;min-height:52px;display:flex;align-items:center}
-.stapblok>summary::-webkit-details-marker{display:none}
-.stapblok>summary h2{margin:0;font-size:19px;border:0;flex:1}
-.stapblok>summary::after{content:'＋';font-size:22px;color:#8a4b2a}.stapblok[open]>summary::after{content:'－'}
-.stapblok.extra{background:transparent;border-style:dashed}
-.volgende{display:block;width:100%;min-height:52px;margin:16px 0 14px;font-size:17px;border-radius:12px;background:#8a4b2a;color:#fff;border:0}
-.kerngrid .kr{display:flex;gap:10px;align-items:center;margin:6px 0}.kl{width:72px;color:#7a6a58;font-size:14px}.kv.groot{font-size:24px;color:#2e6b3a}
-.haak-r{display:grid;grid-template-columns:34px 1fr 54px;grid-template-rows:auto auto;align-items:center;column-gap:8px;padding:8px 0;border-bottom:1px solid #eadfcb}
-.haak-r .taal{grid-row:1/3;font-weight:700;color:#8a4b2a}.haak-r .hw{font-weight:700}.haak-r .sub{grid-column:2}.haak-r button{grid-row:1/3;grid-column:3}
-.klank.klein{min-height:44px;min-width:48px;padding:4px 10px}.klank.breed{min-height:48px;width:100%;margin:8px 0}
-.plek{font-weight:600}
-.vraag{background:#fff;border:1px solid #e3d6bf;border-radius:12px;padding:12px;margin:10px 0}
-.vk{display:flex;gap:8px;align-items:center;margin:0 0 4px}.vk .nr{background:#8a4b2a;color:#fff;border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:13px}.vk .soort{font-size:12px;color:#7a6a58;text-transform:uppercase;letter-spacing:.04em}
-.vv{font-size:17px;margin:4px 0 8px}.hzq{font-size:30px}
-.opties{display:grid;grid-template-columns:1fr 1fr;gap:8px}.opties .opt{min-height:52px;font-size:17px;border-radius:10px}
-.opt.goed{background:#e3f1e5;border-color:#2e6b3a}.opt.fout{background:#fbe5e3;border-color:#b3261e}
-.schrijfvak{width:220px;height:220px;margin:6px auto;background:#fff;border:1px solid #e3d6bf}
-.score{font-size:15px}.balk{display:inline-block;width:120px;height:10px;background:#eadfcb;border-radius:5px;vertical-align:middle;overflow:hidden}.balk span{display:block;height:100%;background:#2e6b3a}
-.stap.klein{min-height:32px;font-size:12px;padding:2px 8px}
-.stil{background:none;border:0;color:#8a4b2a;text-decoration:underline;min-height:44px;font-size:14px;display:block;margin:4px auto}
-header b{white-space:nowrap;font-size:13px}header{min-height:0;padding-top:8px;padding-bottom:8px}
-.pad{top:var(--kop,64px)}.stapblok{scroll-margin-top:140px}
-.opt.goed{color:#1d4a26!important;font-weight:700}.opt.fout{color:#7a1a14!important}
-header a{flex:none}header .zoek{flex:1;min-width:0}.pad{z-index:4}
-.volgt-img{display:none}
-
-button.geen-audio,button[disabled].klank{opacity:.45;background:#ddd!important;color:#555!important;border-style:dashed;cursor:not-allowed;box-shadow:none}
-.geen-audio-uitleg{text-align:center;margin:.3em 0}
-#audiomelding{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);background:#2b2b2b;color:#fff;padding:.6em 1em;border-radius:10px;font-size:15px;max-width:90vw;z-index:99;opacity:0;pointer-events:none;transition:opacity .2s}
-#audiomelding.aan{opacity:1}
-
-.kop-rij{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:nowrap}
-.obrien{margin:0;width:42%;max-width:220px;text-align:left}
-.obrien img,.obrien-leeg{width:100%;aspect-ratio:1;border-radius:14px;object-fit:cover;display:block}
-.obrien-leeg{background:#efe6d6;border:2px dashed #b9a98f;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:#7a6a55;text-align:center}
-.obrien figcaption{font-size:.72rem;line-height:1.25;margin-top:4px;color:#5a4a3a}
-ul.leden li.mini{display:grid;grid-template-columns:auto 1fr;column-gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px dotted #ddd}
-ul.leden li.mini .teken{grid-row:span 2;font-size:1.6rem}
-ul.leden li.mini .haak{grid-column:2;font-size:.78rem;color:#6b5b4b;font-style:italic}
-.famlink{color:inherit;text-decoration:none}.famlink .teken,.famlink .rood{text-decoration:underline dotted #b3261e;text-underline-offset:4px}.obrien-leeg[data-wachtrij]{border-color:#b3261e;color:#b3261e;font-weight:700}#herhaal46 .stap{margin:4px 4px 0 0}
-.obrien-uitleg summary{font-size:.72rem;color:#8a4b2a;cursor:pointer;list-style:none;padding:6px 0;min-height:24px}.obrien-uitleg summary::-webkit-details-marker{display:none}.obrien-uitleg summary::before{content:"ⓘ "}.obrien-uitleg p{margin:2px 0 0}
-.hz2{font-size:30px}.dim{color:var(--dim)}ul.k{list-style:none;padding:0}ul.k li{padding:8px 0;border-bottom:1px solid var(--lijn)}.ok{background:#d6ecd9}</style></head><body><main>
-<p class="sub">Chinese leren 4.6</p><h1>WOORD DIEPTE 4.6</h1>
-<section class="box" id="begin"><h2>Hoe begin je</h2><ol style="margin:0;padding-left:22px"><li>Zoek een woord (hanzi, pinyin of Nederlands).</li><li>Open de kaart.</li><li>Volg de Volgende-knoppen; je voortgang blijft op je eigen telefoon.</li></ol></section>
-<!--zoek-start--><section class="box" id="zoeken"><h2>Zoeken</h2><input id="hubzoek" class="zoek" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="手 · shouji · telefoon · family · hermana" aria-label="Zoek een woord"><p class="sub zk-hulp">Typ een hanzi, pinyin (shouji, shǒujī of shou3ji1), een woord in het Nederlands, Engels of Spaans, een thema (familie, getal) of een radicaal. Alle 731 woorden uit Easy Steps, staatsexamen, HSK1-les en radicalen.</p><ul class="k" id="hubzoek-uit" aria-live="polite"></ul></section><style>#hubzoek{width:100%;box-sizing:border-box;font-size:18px;min-height:48px;padding:10px 14px;border-radius:12px;border:1px solid var(--lijn);background:#fff}#hubzoek:focus{outline:2px solid var(--acc);outline-offset:1px}.zk-hulp{font-size:1rem;margin:6px 0 0}#hubzoek-uit{margin:8px 0 0}#hubzoek-uit li.zk{display:flex;gap:14px;align-items:flex-start;padding:12px 4px;border-bottom:1px solid var(--lijn)}#hubzoek-uit .zk-n{border:0;padding:4px 0;font-size:13px}.zk-hz{font-size:34px;line-height:1.1;min-width:2.2em;color:var(--ink)}.zk-txt{flex:1;min-width:0}.zk-py{color:var(--acc);font-weight:600}.zk-nl{font-size:17px}.zk-klein{font-size:13px;color:var(--dim);overflow-wrap:anywhere}.zk-klein i{font-style:normal;font-size:11px;text-transform:uppercase;opacity:.7}.zk-kaart{display:inline-block;margin-top:4px;padding:4px 10px;border-radius:8px;background:#e7efe2;color:var(--goed);text-decoration:none;font-size:14px}.zk-geen{display:inline-block;margin-top:4px;font-size:13px;color:var(--dim)}.zk-oud{font-size:12px;color:var(--dim)}ul.k>li>a,a.tap44{display:inline-flex;align-items:center;min-height:44px;min-width:44px;padding:0 8px;box-sizing:border-box}</style><script src="zoek.js" defer></script><!--zoek-eind-->
-<section class="box"><h2>Les HSK1 · do 22 okt (bovenaan) · daarna de rest</h2><p class="sub">Elke kaart: formule (klank-haken NL/EN/ES, beeld, Brug-stop, Chinese moedertaalaudio) · losse streken · opbouw · vragen · Buzan-mindmap · verbindingen · recall.</p>
-<ul class="k"><li><a href="kaart/hao.html"><span class="hz2">好</span></a> hǎo · goed, fijn <span class="tag">nieuw</span></li><li><a href="kaart/shouji.html"><span class="hz2">手机</span></a> shǒujī · mobiele telefoon <span class="tag ok">kaart klaar</span></li><li><a href="kaart/dadianhua.html"><span class="hz2">打电话</span></a> dǎ diànhuà · opbellen <span class="tag ok">kaart klaar</span></li><li><a href="kaart/meiyou.html"><span class="hz2">没有</span></a> méiyǒu · niet hebben, er is geen <span class="tag ok">kaart klaar</span></li><li><a href="kaart/didi.html"><span class="hz2">弟弟</span></a> dìdi · jongere broer <span class="tag ok">kaart klaar</span></li><li><a href="kaart/jiejie.html"><span class="hz2">姐姐</span></a> jiějie · oudere zus <span class="tag ok">kaart klaar</span></li><li><a href="kaart/meimei.html"><span class="hz2">妹妹</span></a> mèimei · jongere zus <span class="tag ok">kaart klaar</span></li><li><a href="kaart/nainai.html"><span class="hz2">奶奶</span></a> nǎinai · oma (vaders moeder) <span class="tag ok">kaart klaar</span></li><li><span class="hz2 dim">一</span> yī <span class="tag">nieuw</span></li><li><span class="hz2 dim">二</span> èr <span class="tag">nieuw</span></li><li><span class="hz2 dim">三</span> sān <span class="tag">nieuw</span></li><li><span class="hz2 dim">十</span> shí <span class="tag">nieuw</span></li><li><span class="hz2 dim">百</span> bǎi <span class="tag">nieuw</span></li><li><span class="hz2 dim">零</span> líng <span class="tag">nieuw</span></li><li><span class="hz2 dim">子</span> zǐ <span class="tag">geleerd</span></li><li><span class="hz2 dim">爷</span> yé <span class="tag">nieuw</span></li><li><span class="hz2 dim">字</span> zì <span class="tag">geleerd</span></li><li><span class="hz2 dim">学</span> xué <span class="tag">geleerd</span></li><li><span class="hz2 dim">孩</span> hái <span class="tag">geleerd</span></li><li><span class="hz2 dim">多少</span> duōshao <span class="tag">nieuw</span></li></ul></section>
-<section class="box"><h2>Herhalen</h2><p><a class="stap tap44" href="herhalen.html">Herhalen · wat ken ik, wat moet vandaag?</a></p><p class="sub">Je oefeningen worden op dit apparaat bewaard (geleerd · beheerst · volgende herhaling).</p></section>
-<section class="box"><details><summary>Paleis · De Brug, 10 stops</summary><ol class="paleis"><li><b>Spoorviaduct</b> <span class=sub>het hele station hangt boven de Metamorfosenallee</span></li><li><b>Stationsgebouw</b> <span class=sub>verkeersgebouw van Edwin Megens, 2005</span></li><li><b>Beschilderde pijlers</b> <span class=sub>muurschildering 2024: groen, geschiedenis, wijk</span></li><li><b>Metalen gevel De Brug</b> <span class=sub>gevelsysteem van Rakon (?)</span></li><li><b>Cruijff-court</b> <span class=sub>kooiveld op het schoolplein</span></li><li><b>Glaswand aula</b> <span class=sub>grote glazen buitenwand</span></li><li><b>Zittrap</b> <span class=sub>brede trap die tribune is</span></li><li><b>Vleugel</b> <span class=sub>vleugel in de aula</span></li><li><b>Atrium</b> <span class=sub>hart van de school, grafische prints op de wanden</span></li><li><b>Zwevende gymzaal</b> <span class=sub>sportzaal opgetild naar de 1e verdieping</span></li></ol></details>
-<details><summary>App: Chinese leren 4.6</summary><p><a class="tap44" href="index-3.5.html">Chinese leren 4.6 openen</a></p></details></section>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Woord-diepte · HSK1 Mandarijn</title>
+<meta name="theme-color" content="#f4ede1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4ede1;--pap:#fbf7ef;--ink:#2b2119;--dim:#5e4f40;--rood:#b3261e;--lijn:#e2d6c2;--acc:#8a4b2a;--goed:#2e6b3a;--sch:0 1px 2px rgba(60,40,20,.06),0 8px 24px -12px rgba(60,40,20,.22)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Inter",system-ui,sans-serif;overflow-x:hidden}
+[lang=zh],.t-hz,.hero-hz,.zk-hz{font-family:"Noto Serif SC","Songti SC",serif}
+main{max-width:1120px;margin:0 auto;padding:0 20px 48px}
+a{color:var(--acc)}
+.hero{position:relative;padding:56px 0 36px;text-align:center;overflow:hidden}
+.hero-hz{position:absolute;inset:auto 0 0 0;top:0;font-size:clamp(220px,60vw,480px);line-height:1;color:var(--rood);opacity:.06;pointer-events:none;user-select:none;font-weight:700}
+.eyebrow{display:inline-block;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--rood);font-weight:600;margin:0 0 12px}
+.hero-title{font-family:"Noto Serif SC",Georgia,serif;font-size:clamp(40px,10vw,76px);line-height:1.05;margin:0 0 14px;font-weight:700;letter-spacing:-.01em}
+.hero-lead{font-size:clamp(18px,2.4vw,21px);color:var(--dim);max-width:34em;margin:0 auto 28px}
+.zoekbox{position:relative;max-width:620px;margin:0 auto;text-align:left}
+#hubzoek{width:100%;font:inherit;font-size:19px;min-height:60px;padding:14px 20px 14px 52px;border-radius:999px;border:1px solid var(--lijn);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='none' stroke='%238a4b2a' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='9.5' cy='9.5' r='7'/%3E%3Cpath d='m15 15 5 5'/%3E%3C/svg%3E") no-repeat 20px center;box-shadow:var(--sch);color:var(--ink)}
+#hubzoek:focus{outline:3px solid rgba(179,38,30,.35);outline-offset:2px}
+.zk-hulp{font-size:16px;color:var(--dim);margin:10px 4px 0;text-align:center}
+#hubzoek-uit{list-style:none;padding:0;margin:12px 0 0;background:var(--pap);border-radius:20px}
+#hubzoek-uit:empty{display:none}
+#hubzoek-uit li{padding:12px 18px;border-bottom:1px solid var(--lijn);font-size:16px}
+#hubzoek-uit li:last-child{border-bottom:0}
+#hubzoek-uit li.zk{display:flex;gap:16px;align-items:flex-start}
+.zk-hz{font-size:38px;line-height:1.1;min-width:2.2em}.zk-txt{flex:1;min-width:0;overflow-wrap:anywhere}
+.zk-py{color:var(--rood);font-weight:600}.zk-nl,.zk-klein,.zk-geen,.zk-oud,.zk-n,.sub{font-size:16px}.zk-klein{color:var(--dim)}.zk-klein i{font-style:normal;font-size:16px;opacity:.7}
+.zk-kaart,.zk-oud{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;margin-top:6px;border-radius:999px;background:#e7efe2;color:var(--goed);text-decoration:none;font-weight:600}
+.zk-oud{background:transparent;color:var(--dim)}.zk-geen{color:var(--dim)}
+.stappen{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:620px;margin:28px auto 0;padding:0;list-style:none;counter-reset:s}
+.stappen li{counter-increment:s;font-size:16px;color:var(--dim);line-height:1.35}
+.resultaat li b{display:block;font-family:"Noto Serif SC",Georgia,serif;font-size:32px;color:var(--rood);line-height:1.1}.resultaat li::before{display:none!important;content:counter(s);display:flex;align-items:center;justify-content:center;width:32px;height:32px;margin:0 auto 6px;border-radius:50%;border:1px solid var(--rood);color:var(--rood);font-weight:600}
+.kop{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:40px 0 16px}
+.kop h2{font-family:"Noto Serif SC",Georgia,serif;font-size:clamp(26px,4vw,34px);margin:0}
+.kop p{margin:0;color:var(--dim);font-size:16px}
+.tiles{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tile{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;height:100%;min-height:200px;padding:22px 12px 18px;background:var(--pap);border:1px solid var(--lijn);border-radius:22px;color:var(--ink);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.tile.has-kaart{background:#fffdf8;box-shadow:var(--sch)}
+.tile.has-kaart:hover,.tile.has-kaart:focus-visible{transform:translateY(-3px);box-shadow:0 2px 4px rgba(60,40,20,.08),0 18px 36px -14px rgba(60,40,20,.35)}
+.tile.has-kaart:focus-visible{outline:3px solid var(--rood);outline-offset:2px}
+.t-hz{font-size:clamp(52px,15vw,72px);line-height:1.15;font-weight:600;white-space:nowrap;max-width:100%}
+.tile.has-kaart .t-hz{color:var(--ink)}
+.t-py{font-size:18px;color:var(--rood);font-weight:600;margin-top:6px}
+.t-nl{font-size:16px;color:var(--dim);line-height:1.35;margin:2px 0 14px;flex:1}
+.tag{display:inline-block;font-size:16px;line-height:1;padding:7px 12px;border-radius:999px;background:#efe3cf;color:var(--acc)}
+.tag.ok{background:#e2eedd;color:var(--goed);font-weight:600}.tag.ler{background:#ece7f3;color:#5b3d80}
+.tiles.rest .tile{min-height:170px;background:transparent}.tiles.rest .t-hz{font-size:clamp(44px,12vw,56px);color:#4a3b2e}
+.cta{display:flex;flex-direction:column;gap:16px;align-items:flex-start;margin:44px 0 0;padding:28px 24px;border-radius:26px;background:var(--ink);color:#f6efe3;position:relative;overflow:hidden}
+.cta h2{font-family:"Noto Serif SC",Georgia,serif;font-size:28px;margin:0}.cta p{margin:0;color:#d8ccb9;font-size:16px}
+.cta::after{content:"复";position:absolute;right:-10px;bottom:-40px;font-family:"Noto Serif SC",serif;font-size:200px;line-height:1;color:#fff;opacity:.07}
+.knop{display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;background:var(--rood);color:#fff;text-decoration:none;font-weight:600;font-size:17px;position:relative;z-index:1}
+.knop:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.rust{margin:36px 0 0;border-top:1px solid var(--lijn)}
+.rust details{border-bottom:1px solid var(--lijn)}
+.rust summary{min-height:56px;display:flex;align-items:center;cursor:pointer;font-size:17px;color:var(--ink);list-style:none}
+.rust summary::-webkit-details-marker{display:none}.rust summary::after{content:"+";margin-left:auto;color:var(--rood);font-size:22px}
+.rust details[open] summary::after{content:"–"}
+.rust ol{margin:0 0 16px;padding-left:24px}.rust li{margin:4px 0;font-size:16px}.rust li span{color:var(--dim)}
+.rust .oud{display:inline-flex;align-items:center;min-height:44px}
+.rust .oud-link{display:flex;align-items:center;min-height:56px;font-size:17px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--lijn)}
+.rust .oud-link::after{content:"→";margin-left:auto;color:var(--rood)}
+footer{color:var(--dim);font-size:16px;text-align:center;margin:32px 0 0}
+@media(min-width:600px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.cta{flex-direction:row;align-items:center;justify-content:space-between}}
+@media(min-width:960px){main{padding:0 40px 64px}.hero{padding:96px 0 56px}.tiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.tiles.rest{grid-template-columns:repeat(6,minmax(0,1fr))}.cta{padding:40px 48px}}
+@media(prefers-reduced-motion:reduce){.tile{transition:none}}
+</style></head><body><main>
+<header class="hero" id="begin"><div class="hero-hz" aria-hidden="true" lang="zh">深</div>
+<p class="eyebrow">Mijn eigen succesformule</p><h1 class="hero-title">Woord-diepte</h1>
+<p class="hero-lead">Mandarijn dat blijft hangen. Woorden die je na een dag, een week en een maand nog steeds kent.</p>
+<!--zoek-start--><div class="zoekbox" id="zoeken"><input id="hubzoek" class="zoek" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="手 · shouji · telefoon" aria-label="Zoek een woord"><p class="zk-hulp">Zoek op hanzi, pinyin of een woord in het Nederlands, Engels of Spaans. 731 woorden.</p><ul class="k" id="hubzoek-uit" aria-live="polite"></ul></div><script src="zoek.js" defer></script><!--zoek-eind-->
+<ul class="stappen resultaat"><li><b>731</b>woorden doorzoekbaar</li><li><b>8</b>woordkaarten klaar</li><li><b>100%</b>op je eigen apparaat</li></ul>
+</header>
+<section aria-labelledby="h-kaart"><div class="kop"><h2 id="h-kaart">Woorden van de les</h2><p>Tik op een woord om de kaart te openen</p></div>
+<ul class="tiles"><li><a class="tile has-kaart" href="kaart/hao.html"><span class="t-hz" lang="zh">好</span><span class="t-py">hǎo</span><span class="t-nl">goed, fijn</span><span class="tag">nieuw</span></a></li><li><a class="tile has-kaart" href="kaart/shouji.html"><span class="t-hz" lang="zh">手机</span><span class="t-py">shǒujī</span><span class="t-nl">mobiele telefoon</span><span class="tag ok">kaart klaar</span></a></li><li><a class="tile has-kaart" href="kaart/dadianhua.html"><span class="t-hz" lang="zh">打电话</span><span class="t-py">dǎ diànhuà</span><span class="t-nl">opbellen</span><span class="tag ok">kaart klaar</span></a></li><li><a class="tile has-kaart" href="kaart/meiyou.html"><span class="t-hz" lang="zh">没有</span><span class="t-py">méiyǒu</span><span class="t-nl">niet hebben, er is geen</span><span class="tag ok">kaart klaar</span></a></li><li><a class="tile has-kaart" href="kaart/didi.html"><span class="t-hz" lang="zh">弟弟</span><span class="t-py">dìdi</span><span class="t-nl">jongere broer</span><span class="tag ok">kaart klaar</span></a></li><li><a class="tile has-kaart" href="kaart/jiejie.html"><span class="t-hz" lang="zh">姐姐</span><span class="t-py">jiějie</span><span class="t-nl">oudere zus</span><span class="tag ok">kaart klaar</span></a></li><li><a class="tile has-kaart" href="kaart/meimei.html"><span class="t-hz" lang="zh">妹妹</span><span class="t-py">mèimei</span><span class="t-nl">jongere zus</span><span class="tag ok">kaart klaar</span></a></li><li><a class="tile has-kaart" href="kaart/nainai.html"><span class="t-hz" lang="zh">奶奶</span><span class="t-py">nǎinai</span><span class="t-nl">oma (vaders moeder)</span><span class="tag ok">kaart klaar</span></a></li></ul></section>
+<section aria-labelledby="h-rest"><div class="kop"><h2 id="h-rest">Ook in deze les</h2><p>Kaart volgt nog</p></div>
+<ul class="tiles rest"><li><div class="tile"><span class="t-hz" lang="zh">一</span><span class="t-py">yī</span><span class="t-nl">één</span><span class="tag">nieuw</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">二</span><span class="t-py">èr</span><span class="t-nl">twee</span><span class="tag">nieuw</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">三</span><span class="t-py">sān</span><span class="t-nl">drie</span><span class="tag">nieuw</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">十</span><span class="t-py">shí</span><span class="t-nl">tien</span><span class="tag">nieuw</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">百</span><span class="t-py">bǎi</span><span class="t-nl">honderd</span><span class="tag">nieuw</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">零</span><span class="t-py">líng</span><span class="t-nl">nul</span><span class="tag">nieuw</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">子</span><span class="t-py">zǐ</span><span class="t-nl">kind</span><span class="tag ler">geleerd</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">爷</span><span class="t-py">yé</span><span class="t-nl">opa</span><span class="tag">nieuw</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">字</span><span class="t-py">zì</span><span class="t-nl">karakter</span><span class="tag ler">geleerd</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">学</span><span class="t-py">xué</span><span class="t-nl">leren</span><span class="tag ler">geleerd</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">孩</span><span class="t-py">hái</span><span class="t-nl">kind</span><span class="tag ler">geleerd</span></div></li><li><div class="tile"><span class="t-hz" lang="zh">多少</span><span class="t-py">duōshao</span><span class="t-nl">hoeveel</span><span class="tag">nieuw</span></div></li></ul></section>
+<section class="cta"><div><h2>Herhalen</h2><p>Wat ken je al, en wat moet vandaag? Je voortgang blijft op dit apparaat.</p></div><a class="knop stap" href="herhalen.html">Start herhalen →</a></section>
+<section class="rust"><details><summary>Paleis · De Brug, 10 stops</summary><ol class="paleis"><li><b>Spoorviaduct</b> <span>het hele station hangt boven de straat</span></li><li><b>Stationsgebouw</b> <span>het verkeersgebouw</span></li><li><b>Beschilderde pijlers</b> <span>muurschildering: groen, geschiedenis, wijk</span></li><li><b>Metalen gevel De Brug</b> <span>glanzende metalen buitenkant</span></li><li><b>Sportkooi</b> <span>kooiveld op het schoolplein</span></li><li><b>Glaswand aula</b> <span>grote glazen buitenwand</span></li><li><b>Zittrap</b> <span>brede trap die tribune is</span></li><li><b>Vleugel</b> <span>vleugel in de aula</span></li><li><b>Atrium</b> <span>hart van de school, prints op de wanden</span></li><li><b>Zwevende gymzaal</b> <span>sportzaal opgetild naar de 1e verdieping</span></li></ol></details>
+<a class="oud-link" href="index-3.5.html">Oude app</a></section>
+<footer>Je voortgang wordt alleen op dit apparaat bewaard.</footer>
 </main></body></html>

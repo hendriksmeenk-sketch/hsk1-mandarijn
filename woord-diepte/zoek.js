@@ -1,4 +1,4 @@
-/* Zoeken · Chinese leren 4.6 · alle woorden uit zoek.json (masterlijst), geen externe diensten.
+/* Zoeken · alle woorden uit zoek.json (masterlijst), geen externe diensten.
    Zoekt op hanzi, pinyin (tonen, cijfers of geen), Nederlands, Engels, Spaans, thema en radicaal/onderdeel. */
 (function(){
   /* werkt op hub (index.html) en op kaarten: <script src="../zoek.js" data-base="../" data-overlay="1"> */
@@ -64,11 +64,11 @@
     }
     return s;
   }
-  function bron(b){var l=b.split(' | ').map(function(x){return x.replace('WOORD DIEPTE woorden.json','Woord-diepte').replace(/ · A-Z \(les onbekend\)/,'');});
+  function bron(b){var l=b.split(' | ').map(function(x){return x.replace('WOORD DIEPTE woorden.json','Woord-diepte').replace(/ · A-Z \(les onbekend\)/,'').replace(/\s\d+\.\d+\b/g,'').replace(/HSK1-les [A-Z]{2,}\b/,'HSK1-les');});
     var u=[];l.forEach(function(x){if(u.indexOf(x)<0)u.push(x);});return u.slice(0,2).join(' · ')+(u.length>2?' · +'+(u.length-2):'');}
   function kaart(w){
-    if(w.st==='4.6'&&w.k)return '<a class="zk-kaart" href="'+esc(BASE+w.k)+'">open 4.6-kaart →</a>';
-    return '<span class="zk-geen">nog geen kaart</span>'+(w.st==='3.5'&&w.k?' <a class="zk-oud" href="'+esc(BASE+w.k)+'">3.5-versie</a>':'');
+    if(w.st==='4.6'&&w.k)return '<a class="zk-kaart" href="'+esc(BASE+w.k)+'">open kaart →</a>';
+    return '<span class="zk-geen">nog geen kaart</span>'+(w.st==='3.5'&&w.k?' <a class="zk-oud" href="'+esc(BASE+w.k)+'">oude versie</a>':'');
   }
   function run(){
     var q=inp.value.trim();
@@ -84,7 +84,7 @@
       out.innerHTML='<li class="sub zk-n">'+n+' gevonden'+(n>MAX?' · eerste '+MAX:'')+'</li>'+r.map(function(x){var w=x[1];
         var es=w.es?' · <i>es</i> '+esc(w.es):'',en=w.en?'<i>en</i> '+esc(w.en.split(';').slice(0,2).join(';')):'';
         return '<li class="zk"><div class="zk-hz" lang="zh">'+esc(w.hz)+'</div><div class="zk-txt"><div><b class="zk-py">'+esc(w.py)+'</b> <span class="zk-nl">'+esc(w.nl||'—')+'</span></div>'+
-          '<div class="zk-klein">'+en+es+'</div><div class="zk-klein zk-bron">'+esc(bron(w.bron))+(w.rad&&w.rad!==w.hz?' · radicaal '+esc(w.rad):'')+(w.th.length?' · '+esc(w.th.join(', ')):'')+(w.gen?' · <span title="betekenis/thema automatisch aangevuld, nog te controleren">NL auto</span>':'')+'</div><div>'+kaart(w)+'</div></div></li>';}).join('');
+          '<div class="zk-klein">'+en+es+'</div><div class="zk-klein zk-bron">'+esc(bron(w.bron))+(w.rad&&w.rad!==w.hz?' · radicaal '+esc(w.rad):'')+(w.th.length?' · '+esc(w.th.join(', ')):'')+(w.gen?' · <span title="betekenis/thema automatisch aangevuld, nog te controleren">nog te controleren</span>':'')+'</div><div>'+kaart(w)+'</div></div></li>';}).join('');
     });
   }
   inp.addEventListener('input',function(){clearTimeout(F);F=setTimeout(run,150);});

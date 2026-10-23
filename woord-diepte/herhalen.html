@@ -1,4 +1,4 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Herhalen · Chinese leren 4.6</title>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Herhalen · Woord diepte</title>
 <style>:root{--bg:#f5efe4;--pap:#fbf7ef;--ink:#2b2119;--dim:#6b5a48;--rood:#b3261e;--lijn:#d9ccb6;--acc:#8a4b2a;--goed:#2e6b3a}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,"Noto Serif",serif}
 main{max-width:640px;margin:0 auto;padding:16px}
@@ -71,7 +71,7 @@ details.blok>summary{font-size:18px}
 body.eenblik #blad45 *:not(h1):not(h1 *){visibility:hidden}body.eenblik #blad45 h1{position:fixed;top:30%;left:0;right:0;text-align:center;visibility:visible;z-index:40}
 #kamer-toon{margin-left:.5em}#kamer-toon::after{content:" · "}
 .kw.on,button.kw.on{color:#fff}.kw.on i{color:#F3E6D8}
-/* 4.6c beginners-UI */
+/* beginners-UI */
 #start{text-align:center;padding:18px 0 8px}
 #start h1{margin:0}#start .hz{font-size:96px;line-height:1.1;display:block}
 .groot-audio{font-size:22px;padding:14px 28px;min-height:56px;border-radius:999px;background:#8a4b2a;color:#fff;border:0;margin:6px 0}
@@ -127,24 +127,22 @@ ul.leden li.mini .haak{grid-column:2;font-size:.78rem;color:#6b5b4b;font-style:i
 .famlink{color:inherit;text-decoration:none}.famlink .teken,.famlink .rood{text-decoration:underline dotted #b3261e;text-underline-offset:4px}.obrien-leeg[data-wachtrij]{border-color:#b3261e;color:#b3261e;font-weight:700}#herhaal46 .stap{margin:4px 4px 0 0}
 .obrien-uitleg summary{font-size:.72rem;color:#8a4b2a;cursor:pointer;list-style:none;padding:6px 0;min-height:24px}.obrien-uitleg summary::-webkit-details-marker{display:none}.obrien-uitleg summary::before{content:"ⓘ "}.obrien-uitleg p{margin:2px 0 0}
 table{width:100%;border-collapse:collapse}td,th{padding:8px 4px;border-bottom:1px solid var(--lijn);text-align:left;vertical-align:top}.hz2{font-size:28px}.st-beheerst{color:#2e7d32;font-weight:800}.st-geleerd{color:#b07800;font-weight:800}.st-nieuw{color:#7a6a55}</style></head><body><main>
-<p class="sub"><a href="index.html">← WOORD DIEPTE 4.6</a></p><h1>Herhalen</h1>
+<p class="sub"><a href="index.html">← Woord diepte</a></p><h1>Herhalen</h1>
 <section class="box"><p class="sub">Bewaard op dit apparaat. <b>nieuw</b> = nog geen goede ronde · <b>geleerd</b> = minstens één ronde met ≥10 oefeningen en ≥80% goed · <b>beheerst</b> = goed op 3 verschillende dagen, verspreid over ≥7 dagen. Ladder (5×): 1 uur → 1 dag → 1 week → 1 maand → 3 maanden. Tijden: Amsterdam.</p>
 <p id="som"></p><table><thead><tr><th>Woord</th><th>Status</th><th>Geoefend</th><th>Laatste</th><th>Volgende</th><th></th></tr></thead><tbody id="rij"></tbody></table></section>
 <section class="box"><h2>Log bewaren</h2><p><button type="button" class="stap" id="exp">⬇ Exporteer log (.json)</button> <label class="stap">⬆ Importeer log<input type="file" id="imp" accept=".json,application/json" hidden></label> <button type="button" class="stap" id="ics">📅 Alle herhalingen (.ics)</button></p>
-<p id="sync" class="sub"></p><p class="sub">Exporteer om naar een ander apparaat te verhuizen of als back-up; importeren voegt samen (niets gaat verloren). Het .ics-bestand opent in Google Agenda (of Apple Agenda) met alle volgende herhalingen.</p></section>
-<script>/* log46 · Chinese leren 4.6 activiteitenlog. Alleen op dit apparaat (localStorage 'kx46-log'). Export/import via Herhalen-pagina. */
+<p class="sub">Exporteer om naar een ander apparaat te verhuizen of als back-up; importeren voegt samen (niets gaat verloren). Het .ics-bestand opent in Google Agenda (of Apple Agenda) met alle volgende herhalingen.</p></section>
+<script>/* log46 · Woord diepte activiteitenlog. Alleen op dit apparaat (localStorage 'kx46-log'). Export/import via Herhalen-pagina. */
 var LOG46=(function(){
  var K='kx46-log',U=36e5,DG=864e5,LAD=[['1 uur',U],['1 dag',DG],['1 week',7*DG],['1 maand',30*DG],['3 maanden',91*DG]];
  var BASE='https://hendriksmeenk-sketch.github.io/hsk1-mandarijn/woord-diepte/';
  function lees(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return{}}}
  function schrijf(L){try{localStorage.setItem(K,JSON.stringify(L))}catch(e){}}
  var SID=Date.now();
- var SYNC='https://kx46-sync.kx46.workers.dev/log/',PK='kx46-sync';
- function prof(){try{return JSON.parse(localStorage.getItem(PK)||'null')}catch(e){return null}}
- /* koppelen: eenmalig herhalen.html#koppel=<profiel>.<sleutel> openen; sleutel blijft alleen op dit apparaat */
- function koppel(){var m=location.hash.match(/koppel=([a-z0-9-]+)\.([A-Za-z0-9_-]{20,})/);if(m){try{localStorage.setItem(PK,JSON.stringify({p:m[1],k:m[2]}))}catch(e){}history.replaceState(null,'',location.pathname+location.search);return true}return false}
- var _t;function push(){var P=prof();if(!P)return;clearTimeout(_t);_t=setTimeout(function(){fetch(SYNC+P.p,{method:'POST',headers:{'Authorization':'Bearer '+P.k,'Content-Type':'application/json'},body:JSON.stringify({log:lees()}),keepalive:true}).then(function(r){return r.ok?r.json():null}).then(function(d){if(d&&d.log){schrijf(d.log);try{localStorage.setItem(PK+'-ok',new Date().toISOString())}catch(e){}}}).catch(function(){})},1500)}
- function pull(cb){var P=prof();if(!P)return cb&&cb(false);fetch(SYNC+P.p,{headers:{'Authorization':'Bearer '+P.k}}).then(function(r){if(!r.ok)throw r.status;return r.json()}).then(function(d){var L=lees(),R=d.log||{};Object.keys(R).forEach(function(s){var w=L[s]||(L[s]={hz:R[s].hz,py:R[s].py,nl:R[s].nl,sessies:[]}),ids={};w.sessies.forEach(function(x){ids[x.id]=1});R[s].sessies.forEach(function(x){if(!ids[x.id])w.sessies.push(x)});w.sessies.sort(function(a,b){return a.id-b.id})});schrijf(L);push();cb&&cb(true)}).catch(function(e){cb&&cb(false,e)})}
+ function prof(){return null}
+ function koppel(){return false}
+ /* alles blijft op dit apparaat: geen sync */ function push(){}
+ function pull(cb){cb&&cb(false)}
  function noteer(d,i,ok,soort){var L=lees(),w=L[d.slug]||(L[d.slug]={hz:d.hz,py:d.py,nl:d.nl,sessies:[]});
   var s=w.sessies.find(function(x){return x.id===SID});if(!s){s={id:SID,start:new Date().toISOString(),n:0,goed:0,fout:0,vragen:{},totaal:(d.oef||[]).length};w.sessies.push(s)}
   if(s.vragen[i]==null){s.n++;ok?s.goed++:s.fout++;s.vragen[i]={ok:ok?1:0,soort:soort||''}}
@@ -172,9 +170,8 @@ function teken(){const L=LOG46.lees(),alle=KAART.map(k=>({...k,...(L[k.slug]||{s
  $('som').textContent=`${tel.beheerst} beheerst · ${tel.geleerd} geleerd · ${tel.nieuw} nieuw`}
 $('exp').onclick=()=>{const b=new Blob([JSON.stringify({schema:'kx46-log',export:new Date().toISOString(),log:LOG46.lees()},null,1)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='chinese-leren-log-'+new Date().toISOString().slice(0,10)+'.json';a.click()};
 $('imp').onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{const d=JSON.parse(t).log||JSON.parse(t),L=LOG46.lees();Object.keys(d).forEach(s=>{const w=L[s]||(L[s]={...d[s],sessies:[]});const ids=new Set(w.sessies.map(x=>x.id));d[s].sessies.forEach(x=>{if(!ids.has(x.id))w.sessies.push(x)});w.sessies.sort((a,b)=>a.id-b.id)});LOG46.schrijf(L);teken();alert('Log samengevoegd.')}).catch(()=>alert('Geen geldig logbestand.'))};
-$('ics').onclick=()=>{const L=LOG46.lees(),z=t=>new Date(t).toISOString().replace(/[-:]/g,'').replace(/\.\d+/,'');let s='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//kinetix//chinese-leren-4.6//NL\r\n';
+$('ics').onclick=()=>{const L=LOG46.lees(),z=t=>new Date(t).toISOString().replace(/[-:]/g,'').replace(/\.\d+/,'');let s='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//kinetix//woord-diepte//NL\r\n';
  Object.keys(L).forEach(k=>{const f=LOG46.info(L[k]);if(!f.volgende)return;s+=`BEGIN:VEVENT\r\nUID:${k}-${f.stap}@kx46\r\nDTSTAMP:${z(Date.now())}\r\nDTSTART:${z(f.volgende)}\r\nDTEND:${z(f.volgende+9e5)}\r\nSUMMARY:Herhaal ${L[k].hz} (${L[k].py})\r\nURL:https://hendriksmeenk-sketch.github.io/hsk1-mandarijn/woord-diepte/kaart/${k}.html\r\nEND:VEVENT\r\n`});
  s+='END:VCALENDAR\r\n';const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/calendar'}));a.download='chinese-leren-herhalen.ics';a.click()};
-const nieuw=LOG46.koppel();function syncRegel(ok){const P=LOG46.prof();$('sync').innerHTML=P?`🔒 Privé-sync aan (profiel ${esc(P.p)})${ok===false?' · nu niet bereikbaar':''}${nieuw?' · dit apparaat is gekoppeld':''} <button type="button" class="stap klein" id="ontkoppel">ontkoppel</button>`:'Privé-sync uit: open één keer je persoonlijke koppellink op dit apparaat.';const o=$('ontkoppel');if(o)o.onclick=()=>{localStorage.removeItem('kx46-sync');syncRegel()}}
-teken();syncRegel();LOG46.pull((ok)=>{teken();syncRegel(ok)});</script>
-<footer>zwaar werk door: Chinese leren 4.6 · log alleen op dit apparaat</footer></main></body></html>
+teken();</script>
+<footer>Woord diepte · log alleen op dit apparaat</footer></main></body></html>

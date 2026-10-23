@@ -332,7 +332,7 @@
     var base = location.href.split("?")[0];
     var plan = bags.map(function (b) { return Chronos.eventFor(b, base); });
     document.getElementById("wij").textContent = state.learner + ": geleerd. " + plan.length + " recall-momenten gepland.";
-    fetch("/api/plan", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ woorden: db.woorden, plan: plan, learner: state.learner }) }).catch(function () {});
+    /* plan blijft op dit apparaat: geen /api/plan */
     return plan;
   }
 
