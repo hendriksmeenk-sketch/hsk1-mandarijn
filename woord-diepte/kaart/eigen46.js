@@ -1,4 +1,6 @@
-/* eigen46 · publieke laag: eigen route (O'Brien), eigen audio-haak, uitspraak-proef kruipen/lopen/rennen. Alles lokaal in de browser; niets wordt verstuurd. */
+/* eigen46 · persoonlijke route (O'Brien), eigen audio-haak, uitspraak-proef kruipen/lopen/rennen.
+   De drie gedeelde paleizen (Wereldwonderen, Grond-reis, Moeder Aarde) staan in paleis46.js.
+   Deze route blijft op dit toestel; niets wordt verstuurd of gepubliceerd. */
 (function(){
 var hz=(document.getElementById('kop-hz')||{}).textContent||'';var slug=(location.pathname.split('/').pop()||'').replace('.html','');
 var K='kx46-eigen-route',route=[];try{route=JSON.parse(localStorage.getItem(K)||'[]')}catch(e){}

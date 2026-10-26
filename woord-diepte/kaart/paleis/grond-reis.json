@@ -1,0 +1,71 @@
+{
+ "id": "grond-reis",
+ "naam": "Grond-reis",
+ "soort": "gemeenschap",
+ "status": "adat-groen-26okt",
+ "vervangt": "landen (draft-26okt, landen-framing ingetrokken)",
+ "framing": "grond + volkeren op continenten; zintuiglijke grond; geen vlaggen, geen ranking, geen exotische sticker",
+ "richting": "oost naar west; stopnummer deelt slot met wereldwonderen",
+ "stops": [
+  {
+   "nr": 1,
+   "naam": "Oost-Azië",
+   "grond": "gele löss-aarde: fijn stof, terrassen, wind",
+   "volkeren": null
+  },
+  {
+   "nr": 2,
+   "naam": "Nusantara-eilanden",
+   "grond": "zwarte vulkanische grond, warme regen",
+   "volkeren": null
+  },
+  {
+   "nr": 3,
+   "naam": "Zuid-Azië",
+   "grond": "delta-slib: natte klei na de moesson",
+   "volkeren": null
+  },
+  {
+   "nr": 4,
+   "naam": "Centraal-Azië",
+   "grond": "steppe: gras tot de horizon, droge wind",
+   "volkeren": null
+  },
+  {
+   "nr": 5,
+   "naam": "Arabisch schiereiland",
+   "grond": "zandgrond, steen, oase-water",
+   "volkeren": null
+  },
+  {
+   "nr": 6,
+   "naam": "Oost-Afrika",
+   "grond": "rode hooglandaarde, koele ochtend",
+   "volkeren": null
+  },
+  {
+   "nr": 7,
+   "naam": "West-Afrika",
+   "grond": "Sahel: droge grond die groen wordt na regen",
+   "volkeren": null
+  },
+  {
+   "nr": 8,
+   "naam": "Noordwest-Europa",
+   "grond": "veen en klei onder de dijk, zilte lucht",
+   "volkeren": null
+  },
+  {
+   "nr": 9,
+   "naam": "Zuid-Amerika",
+   "grond": "pampa: vlakke zwarte grond, lange grassen",
+   "volkeren": null
+  },
+  {
+   "nr": 10,
+   "naam": "Noord-Amerika",
+   "grond": "prairie: diepe wortels, onweerslucht",
+   "volkeren": null
+  }
+ ]
+}

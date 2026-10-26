@@ -1,0 +1,124 @@
+{
+ "id": "wereldwonderen",
+ "naam": "Wereldwonderen",
+ "soort": "gemeenschap",
+ "richting": "een wereldreis van oost naar west: start in China, eindigt in Rio; altijd dezelfde volgorde; uitbreidbaar met stop 11, 12 …",
+ "stops": [
+  {
+   "nr": 1,
+   "naam": "Chinese Muur",
+   "kenmerk": "eindeloze stenen draak over de bergkammen, wachttorens",
+   "foto": "foto/wonder-1.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+   "licentie": "CC BY-SA 3.0",
+   "maker": "Severin.stalder"
+  },
+  {
+   "nr": 2,
+   "naam": "Verboden Stad",
+   "kenmerk": "rode muren, gouden daken, poorten in een rechte as",
+   "foto": "foto/wonder-2.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+   "licentie": "CC BY-SA 3.0",
+   "maker": "Pixelflake"
+  },
+  {
+   "nr": 3,
+   "naam": "Angkor Wat",
+   "kenmerk": "vijf lotustorens gespiegeld in de vijver",
+   "foto": "foto/wonder-3.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg",
+   "licentie": "CC BY-SA 4.0",
+   "maker": "Bjørn Christian Tørrissen"
+  },
+  {
+   "nr": 4,
+   "naam": "Taj Mahal",
+   "kenmerk": "witte marmeren koepel, vier minaretten, lange waterspiegel",
+   "foto": "foto/wonder-4.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg",
+   "licentie": "CC BY-SA 4.0",
+   "maker": "Yann; edited by Jim Carter"
+  },
+  {
+   "nr": 5,
+   "naam": "Petra",
+   "kenmerk": "tempel uitgehakt in roze rots (Al-Deir)",
+   "foto": "foto/wonder-5.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:Al_Deir_Petra.JPG",
+   "licentie": "CC BY-SA 3.0",
+   "maker": "Azurfrog"
+  },
+  {
+   "nr": 6,
+   "naam": "Piramides van Gizeh",
+   "kenmerk": "reusachtige stenen driehoek in de woestijn",
+   "foto": "foto/wonder-6.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+   "licentie": "CC BY-SA 4.0",
+   "maker": "Douwe C. van der Zee"
+  },
+  {
+   "nr": 7,
+   "naam": "Colosseum",
+   "kenmerk": "ronde arena met bogen, half afgebrokkeld",
+   "foto": "foto/wonder-7.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
+   "licentie": "CC BY-SA 4.0",
+   "maker": "FeaturedPics"
+  },
+  {
+   "nr": 8,
+   "naam": "Chichén Itzá",
+   "kenmerk": "trappenpiramide van El Castillo, slangenkoppen onderaan",
+   "foto": "foto/wonder-8.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg",
+   "licentie": "CC BY-SA 4.0",
+   "maker": "Daniel Schwen"
+  },
+  {
+   "nr": 9,
+   "naam": "Machu Picchu",
+   "kenmerk": "stenen terrassen op een bergtop in de wolken",
+   "foto": "foto/wonder-9.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_2023_(012).jpg",
+   "licentie": "CC BY-SA 4.0",
+   "maker": "Draceane"
+  },
+  {
+   "nr": 10,
+   "naam": "Christus de Verlosser",
+   "kenmerk": "reuzenbeeld met gespreide armen boven Rio",
+   "foto": "foto/wonder-10.jpg",
+   "foto_bron": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+   "licentie": "CC BY-SA 3.0 de",
+   "maker": "Arne Müseler"
+  }
+ ],
+ "woorden": {
+  "nainai": [
+   1
+  ],
+  "dadianhua": [
+   2
+  ],
+  "meimei": [
+   3
+  ],
+  "jiejie": [
+   4
+  ],
+  "didi": [
+   5
+  ],
+  "shouji": [
+   6
+  ],
+  "meiyou": [
+   7
+  ],
+  "hao": [
+   8
+  ]
+ }
+}

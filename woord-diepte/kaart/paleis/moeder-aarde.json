@@ -1,0 +1,70 @@
+{
+ "id": "moeder-aarde",
+ "naam": "Moeder Aarde",
+ "soort": "gemeenschap",
+ "status": "adat-groen-26okt",
+ "framing": "living places: landschap is levend, gelijk in het biologische web; geen trophee, geen ceremonie als decor",
+ "richting": "slots 1–10 wisselbaar met wereldwonderen (zelfde stopnummer)",
+ "stops": [
+  {
+   "nr": 1,
+   "naam": "Himalaya",
+   "levend": "hoge bergen als watertorens; sneeuw voedt rivieren",
+   "volkeren": "volkeren van de hoogten"
+  },
+  {
+   "nr": 2,
+   "naam": "Amazone",
+   "levend": "rivier en woud als één levend bekken",
+   "volkeren": "volkeren van het bekken"
+  },
+  {
+   "nr": 3,
+   "naam": "Nijl",
+   "levend": "lange rivier; vruchtbare oever langs het water",
+   "volkeren": "volkeren langs het water"
+  },
+  {
+   "nr": 4,
+   "naam": "Sahara",
+   "levend": "woestijn als leefwereld: wind, zand, oase — geen lege zandbak",
+   "volkeren": "volkeren die de woestijn bewonen en doorkruisen"
+  },
+  {
+   "nr": 5,
+   "naam": "Stille Oceaan",
+   "levend": "grote zee; deining, wind, eilanden en kusten",
+   "volkeren": "eiland- en kustvolkeren"
+  },
+  {
+   "nr": 6,
+   "naam": "Andes",
+   "levend": "bergketen; terrassen-grond op steile hellingen",
+   "volkeren": "Andean volkeren die de terrassen bewerken"
+  },
+  {
+   "nr": 7,
+   "naam": "Riftvallei",
+   "levend": "Oost-Afrikaanse rift: gescheurde aarde, meren, vlakte",
+   "volkeren": "herders en volkeren van de rift"
+  },
+  {
+   "nr": 8,
+   "naam": "Congo-woud",
+   "levend": "regenwoud-bekken; vochtige lucht, hoge kruinen",
+   "volkeren": "volkeren van het woud"
+  },
+  {
+   "nr": 9,
+   "naam": "Arctisch ijs",
+   "levend": "zee-ijs dat groeit en smelt met de seizoenen",
+   "volkeren": "volkeren van het noorden"
+  },
+  {
+   "nr": 10,
+   "naam": "Koraalrif",
+   "levend": "levend rif: koraal bouwt, vissen wonen, zee spoelt",
+   "volkeren": null
+  }
+ ]
+}
