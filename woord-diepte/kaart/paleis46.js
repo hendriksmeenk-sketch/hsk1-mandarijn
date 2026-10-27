@@ -12,6 +12,7 @@ var EMBED =
 var PALEIS={};
 Object.keys(EMBED).forEach(function(id){PALEIS[id]=EMBED[id]});
 var actief='wereldwonderen';
+try{ if(window.D&&D.router&&D.router.stops){ PALEIS.wereldrouter={naam:'Wereldroute · '+D.router.naam, stops:D.router.stops} } }catch(e){}
 function slug(){
   try{ if(window.D&&D.slug) return D.slug }catch(e){}
   return (location.pathname.split('/').pop()||'').replace(/\.html$/,'');
@@ -21,6 +22,7 @@ function norm(v){
   if(v==='mijn'||v==='persoonlijk') return 'persoonlijk';
   if(v==='landen'||v==='grond-reis') return 'grond-reis';
   if(v==='moeder-aarde') return 'moeder-aarde';
+  if(v==='wereldrouter'||v==='router') return 'wereldrouter';
   return '';
 }
 function leesActief(){
@@ -28,7 +30,7 @@ function leesActief(){
   try{ n=localStorage.getItem(KEY)||''; o=localStorage.getItem(OLD)||'' }catch(e){}
   var v=norm(n)||norm(o);
   if(!v){ try{ if(!n&&!o&&localStorage.getItem('kx46-sync')) v='persoonlijk' }catch(e){} }
-  if(!v) v='wereldwonderen';
+  if(!v) v=PALEIS.wereldrouter?'wereldrouter':'wereldwonderen';
   try{ if(localStorage.getItem(KEY)!==v) localStorage.setItem(KEY,v) }catch(e){}
   return v;
 }
@@ -111,7 +113,7 @@ function teken(id){
     var mijn=[].slice.call(fig.querySelectorAll('img.pl-mijn'));
     var wereld=[].slice.call(fig.querySelectorAll('img.pl-wereld'));
     var toonM=id==='persoonlijk'&&mijn.length>0;
-    var toonW=id==='wereldwonderen'&&wereld.length>0;
+    var toonW=(id==='wereldwonderen'||(id==='wereldrouter'&&D.router&&D.router.id==='wereldwonderen'))&&wereld.length>0;
     mijn.forEach(function(e){ e.hidden=!toonM });
     wereld.forEach(function(e){ e.hidden=!toonW });
     var note=fig.querySelector('[data-pl-beeld]');
@@ -120,7 +122,7 @@ function teken(id){
   try{ document.documentElement.setAttribute('data-paleis', id) }catch(e){}
 }
 function zet(id){
-  id=norm(id)||'wereldwonderen';
+  id=norm(id)||(PALEIS.wereldrouter?'wereldrouter':'wereldwonderen');
   try{ localStorage.setItem(KEY,id) }catch(e){}
   teken(id);
 }
